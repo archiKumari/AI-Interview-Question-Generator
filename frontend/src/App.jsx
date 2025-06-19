@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { CssBaseline, Grid } from "@mui/material";
+import JobForm from "./components/JobForm";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const handleGenerate = async (formData) => {
+    setMetaData(formData);
+    console.log("Button Clicked");
+  };
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CssBaseline />
+      <Grid
+        container
+        direction="column"
+        mt={5}
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
+        <Grid
+          size={8}
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <JobForm onSubmit={handleGenerate} />
+        </Grid>
+      </Grid>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
