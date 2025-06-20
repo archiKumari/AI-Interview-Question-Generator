@@ -66,6 +66,16 @@ An intelligent tool that generates tailored technical interview questions with a
 
 ---
 
+### 💻 Working Demos
+
+1. **Working Demo 1 :** Set of interview questions generated for junior frontend developer position.
+   (https://drive.google.com/file/d/1ABKabC54xEigr4n6EQFWADL9yQ3UjQ4i/view?usp=drive_link)
+   
+2. **Working Demo 2 :** Set of interview questions generated for mid-level backend developer role.
+   (https://drive.google.com/file/d/131iLNDhITkwF0p4yOomDiB4i42KTsjRk/view?usp=drive_link)
+
+---
+
 🔗 Feel free to connect or DM for deeper technical walkthroughs or potential collaboration ideas!
 
 ---
